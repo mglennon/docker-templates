@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2020-10-01</Date>
+  <Beta>False</Beta>
+  <Category>Video MediaServer</Category>
+  <Name>chs-rtmp-server</Name>
+  <Project>https://github.com/mglennon/chs-rtmp-server</Project>
+  <Changes>
+
+[center][font size=4]FIRST Chesapeake RTMP Server[/font][/center]
+[font size=3]2020.10[/font]
+- Initial Release (Development)
+  </Changes>
+  <Overview>
+    Docker image for video streaming server that supports RTMP, HLS, and DASH streams. Designed to facilitate the streaming of remote events for FIRST Chesapeake.
+  </Overview>
+  <Description>
+    Docker image for video streaming server that supports RTMP, HLS, and DASH streams. Designed to facilitate the streaming of remote events for FIRST Chesapeake
+  </Description>
+  <Registry>https://registry.hub.docker.com/r/mglennon/chs-rtmp-server</Registry>
+  <GitHub>https://github.com/mglennon/chs-rtmp-server</GitHub>
+  <Repository>limetech/plex</Repository>
+  <Support>https://github.com/mglennon/chs-rtmp-server/issues</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/chs-rtmp-server/config</HostDir>
+      <ContainerDir>/etc/nginx</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    
+  </Data>
+  <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
+  <Banner></Banner>
+  <Icon>https://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png</Icon>
+</Containers>
