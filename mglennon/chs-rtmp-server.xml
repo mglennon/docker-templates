@@ -1,43 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <TemplateURL>https://raw.githubusercontent.com/mglennon/docker-templates/main/mglennon/chs-rmtp-server.xml</TemplateURL>
-  <Date>2020-10-01</Date>
-  <Beta>False</Beta>
-  <Category>Video MediaServer</Category>
+<?xml version="1.0"?>
+<Container version="2">
   <Name>chs-rtmp-server</Name>
-  <Project>https://github.com/mglennon/chs-rtmp-server</Project>
-  <Changes>
-
-[center][font size=4]FIRST Chesapeake RTMP Server[/font][/center]
-[font size=3]2020.10[/font]
-- Initial Release (Development)
-  </Changes>
-  <Overview>
-    Docker image for video streaming server that supports RTMP, HLS, and DASH streams. Designed to facilitate the streaming of remote events for FIRST Chesapeake.
-  </Overview>
-  <Description>
-    Docker image for video streaming server that supports RTMP, HLS, and DASH streams. Designed to facilitate the streaming of remote events for FIRST Chesapeake
-  </Description>
-  <Registry>https://registry.hub.docker.com/r/mglennon/chs-rtmp-server</Registry>
-  <GitHub>https://github.com/mglennon/chs-rtmp-server</GitHub>
   <Repository>mglennon/chs-rtmp-server</Repository>
-  <Support>https://github.com/mglennon/chs-rtmp-server/issues</Support>
-  <BindTime>true</BindTime>
+  <Registry>ttps://registry.hub.docker.com/r/mglennon/chs-rtmp-server</Registry>
+  <Network>br0</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
+  <Support>https://github.com/mglennon/chs-rtmp-server/issues</Support>
+  <Project>https://github.com/mglennon/chs-rtmp-server</Project>
+  <Overview>Docker image for video streaming server that supports RTMP, HLS, and DASH streams. Designed to facilitate the streaming of remote events for FIRST Chesapeake.</Overview>
+  <Category>MediaServer:Video Status:Beta</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1601590110</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Docker image for video streaming server that supports RTMP, HLS, and DASH streams. Designed to facilitate the streaming of remote events for FIRST Chesapeake.</Description>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>br0</Mode>
     <Publish/>
   </Networking>
-  <Environment/>
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/chs-rtmp-server/config</HostDir>
       <ContainerDir>/etc/nginx</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-
   </Data>
-  <WebUI>http://[IP]:[PORT:8008]/stats</WebUI>
-  <Banner></Banner>
-  <Icon></Icon>
-</Containers>
+  <Environment/>
+  <Labels/>
+  <Config Name="Nginx Config Path" Target="/etc/nginx" Default="" Mode="rw" Description="Container Path: /etc/nginx" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/chs-rtmp-server/config</Config>
+</Container>
