@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
+  <TemplateURL>https://raw.githubusercontent.com/mglennon/docker-templates/main/mglennon/chs-rmtp-server.xml</TemplateURL>
   <Date>2020-10-01</Date>
   <Beta>False</Beta>
   <Category>Video MediaServer</Category>
@@ -19,7 +20,7 @@
   </Description>
   <Registry>https://registry.hub.docker.com/r/mglennon/chs-rtmp-server</Registry>
   <GitHub>https://github.com/mglennon/chs-rtmp-server</GitHub>
-  <Repository>limetech/plex</Repository>
+  <Repository>mglennon/chs-rtmp-server</Repository>
   <Support>https://github.com/mglennon/chs-rtmp-server/issues</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
