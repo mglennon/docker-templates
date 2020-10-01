@@ -11,7 +11,7 @@
   <Project>https://github.com/mglennon/chs-rtmp-server</Project>
   <Overview>Docker image for video streaming server that supports RTMP, HLS, and DASH streams. Designed to facilitate the streaming of remote events for FIRST Chesapeake.</Overview>
   <Category>MediaServer:Video Status:Beta</Category>
-  <WebUI/>
+  <WebUI>http://[IP]:[PORT:8080]/stat</webUI>
   <TemplateURL/>
   <Icon/>
   <ExtraParams/>
