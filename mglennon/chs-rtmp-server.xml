@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1601590110</DateInstalled>
+  <DateInstalled/>
   <DonateText/>
   <DonateLink/>
   <Description>Docker image for video streaming server that supports RTMP, HLS, and DASH streams. Designed to facilitate the streaming of remote events for FIRST Chesapeake.</Description>
